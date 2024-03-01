@@ -1,0 +1,34 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SPVR"
+              xmlns:CustomControls="clr-namespace:SPVR.CustomControls"
+              x:Class="SPVR.VistaConfiguraciones"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             x:Name="UCConfig"
+             >
+
+
+
+
+    <Grid  x:Name="mainGrid" Background="White" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Margin="50,0" TextWrapping="Wrap" Text="CONFIGURACIONES" Width="auto" FontFamily="/SPVR;component/Fonts/#Louis George Café" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold"/>
+        <ScrollViewer Grid.Row="1">
+            <WrapPanel x:Name="WrapPanelConfig" Margin="20,0">
+                <CustomControls:ImageTextButton x:Name="ConfigPlatillos" Width="150" Height="150" FuenteImagen="/SPVR;component/Icons/Configuracion de Platillos.png" Texto="Configuracion de platillos" Click="ConfigPlatillos_Click"/>
+                <CustomControls:ImageTextButton x:Name="ConfigPromo" Width="150" Height="150" FuenteImagen="/SPVR;component/Icons/Promoción del Día.png" Texto="Configuracion de promoción del día"/>
+                <CustomControls:ImageTextButton x:Name="GenerarReporte" Width="150" Height="150" FuenteImagen="/SPVR;component/Icons/Generar Reporte.png" Texto="Generar reporte de venta"/>
+            </WrapPanel>
+        </ScrollViewer>
+
+        
+
+    </Grid>
+</UserControl>
